@@ -26,4 +26,5 @@ java --module-path "%PATH_TO_FX%" --add-modules javafx.controls,javafx.fxml -cp 
 These are example commands for Java files in one folder without package declarations, Java modules, or additional dependencies. Replace the paths and Main with your actual project folder, JavaFX SDK location, and entry-class name. Keep FXML files and other resources at the locations expected by the code. Projects with a different layout may require different commands.
 
 Author
+
 Ahmad Shahid
