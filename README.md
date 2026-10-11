@@ -21,14 +21,19 @@ Navigate to the folder containing the project's Java files:
 
 cd /d "C:\Projects\yahtzee-simulator"
 
-Set the path to your JavaFX SDK's lib folder:
+You'll need a JDK and JavaFX configured so that javac and java can find JavaFX without additional command-line options.
 
-set "PATH_TO_FX=C:\Tools\javafx-sdk\lib"
+Open Command Prompt in the folder containing Yahtzee.java, YahtzeeController.java, and Yahtzee.fxml.
 
-Compile the Java files with javac, then run the application with java:
+Compile the Java files:
 
-javac --module-path "%PATH_TO_FX%" --add-modules javafx.controls,javafx.fxml -d out *.java
-java --module-path "%PATH_TO_FX%" --add-modules javafx.controls,javafx.fxml -cp "out;." Main
+javac Yahtzee.java YahtzeeController.java
+
+Run the application:
+
+java Yahtzee
+
+Keep Yahtzee.fxml in the same folder. If JavaFX is not already configured for these commands, additional JavaFX options will be required.
 
 These are example commands for Java files in one folder without package declarations, Java modules, or additional dependencies. Replace the paths and Main with your actual project folder, JavaFX SDK location, and entry-class name. Keep FXML files and other resources at the locations expected by the code. Projects with a different layout may require different commands.
 
