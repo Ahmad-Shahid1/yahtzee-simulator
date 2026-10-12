@@ -27,7 +27,8 @@ Open Command Prompt in the folder containing Yahtzee.java, YahtzeeController.jav
 
 Compile the Java files:
 
-javac Yahtzee.java YahtzeeController.java
+javac Yahtzee.java 
+javac YahtzeeController.java
 
 Run the application:
 
